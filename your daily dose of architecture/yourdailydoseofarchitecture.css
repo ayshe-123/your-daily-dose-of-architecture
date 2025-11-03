@@ -1,0 +1,47 @@
+
+body {
+  background-color: rgb(129, 129, 129); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Başlık alanı */
+.guernica-baslik::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("images/resim.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;  /* Saydamlık seviyesi (0.0–1.0 arası) */
+    z-index: 0;
+}
+.guernica-baslik {
+  position: relative;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  overflow: hidden;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  z-index: 1;
+}
+/* Alt metin */
+.banner-alt {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 40px 0;
+  font-size: 20px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
